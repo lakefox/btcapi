@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>BTC APIo</title>
+    <link rel="stylesheet" href="./css/master.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto:900|ZCOOL+QingKe+HuangYou" rel="stylesheet">
+    <link href='https://unpkg.com/boxicons@1.7.1/css/boxicons.min.css' rel='stylesheet'>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, maximum-scale=1, user-scalable=0">
+  </head>
+  <body>
+    <div class="price_diff">
+      <i class='bx bx-up-arrow'></i> ~$<span id="diff">null</span>
+      <div class="calc">
+        <div id="profit">Profit $0</div><input type="number" id="input" placeholder="0" onchange="calcProfit()">
+      </div>
+    </div>
+    <div id="container">
+      <div class="loader">
+        <i class='bx bxs-dollar-circle bx-spin' ></i>
+      </div>
+    </div>
+    <div class="info">
+      <div class="h1">
+        Purchase
+      </div>
+      <div class="price_diff" id="buy_amt">$0</div>
+
+      <div id="continue">
+        Continue?
+      </div>
+
+    </div>
+    <script src="./js/api.js" charset="utf-8"></script>
+  </body>
+</html>

@@ -1,0 +1,4 @@
+GDAX                        https://api-public.sandbox.pro.coinbase.com/products/BTC-USD/ticker
+OKCoin                      https://www.okcoin.com/api/v1/ticker.do?symbol=btc_usd
+Bitstamp                    https://www.bitstamp.net/api/v2/ticker/btcusd
+Poloniex                    https://poloniex.com/public?command=returnTicker
