@@ -82,9 +82,10 @@ function calcProfit() {
   let profit = (((diff-(diff*(fees/100)))/low[1])*amt)*times;
   if (amt > document.querySelector("#input").max) {
     document.querySelector("#input").style.borderColor = "#f25c3b";
+  } else {
+    console.log(profit);
+    document.querySelector("#profit").innerHTML = `Profit $${profit.toLocaleString()}`;
+    document.querySelector("#buy_amt").innerHTML = `<span class="red">$${amt.toLocaleString()}</span> from <u>${low[3]}</u><br>
+                                                  Sell on <u>${high[3]}</u> for <span class="green">$${(amt + profit).toLocaleString()}</span>`;
   }
-  console.log(profit);
-  document.querySelector("#profit").innerHTML = `Profit $${profit.toLocaleString()}`;
-  document.querySelector("#buy_amt").innerHTML = `<span class="red">$${amt.toLocaleString()}</span> from <u>${low[3]}</u><br>
-                                                  Sell on <u>${high[3]}</u> for <span class="green">$${(amt+profit).toLocaleString()}</span>`;
 }
