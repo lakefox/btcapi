@@ -78,7 +78,8 @@ setInterval(getPrices, 60000);
 
 function calcProfit() {
   let amt = parseInt(document.querySelector("#input").value) || 0;
-  let profit = ((diff-(diff*(fees/100)))/low[1])*amt;
+  let times = parseInt(document.querySelector("#amt").value) || 1;
+  let profit = (((diff-(diff*(fees/100)))/low[1])*amt)*times;
   console.log(profit);
   document.querySelector("#profit").innerHTML = `Profit $${profit.toLocaleString()}`;
   document.querySelector("#buy_amt").innerHTML = `<span class="red">$${amt.toLocaleString()}</span> from <u>${low[3]}</u><br>

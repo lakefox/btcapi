@@ -12,7 +12,14 @@
     <div class="price_diff">
       <i class='bx bx-up-arrow'></i> ~$<span id="diff">null</span>
       <div class="calc">
-        <div id="profit">Profit $0</div><input type="number" id="input" placeholder="0" onchange="calcProfit()">
+        <div id="profit">Profit $0</div>
+        <div class="inline">
+          <div class="s">
+            $
+          </div><input type="number" id="input" placeholder="0" onchange="calcProfit()">
+          <div id="amount">X</div>
+          <input type="number" id="amt" placeholder="0" onchange="calcProfit()">
+        </div>
       </div>
     </div>
     <div id="container">
